@@ -19,13 +19,13 @@ class PQ implements Comparable<PQ>{
     }
 
     @Override
-    public int compareTo(PQ input){
+    public int compareTo(PQ target){
 
-        if(this.data > input.data)
+        if(this.data > target.data)
             return 1;
             
-        else if(this.data == input.data)
-            if(this.sign > input.sign)
+        else if(this.data == target.data)
+            if(this.sign > target.sign)
                 return 1;
             else
                 return -1;
